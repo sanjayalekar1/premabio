@@ -1,0 +1,92 @@
+/* Navbar.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(90deg,  #5318eb, #ab6ef9);
+    color: white;
+    padding: 10px 20px;
+  }
+
+  .navbar-brand {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-size: 1.75rem;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  
+  .navbar-brand h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-brand.scrolled .initials {
+    opacity: 1;
+  }
+  .navbar-brand.scrolled .full-name {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  .full-name {
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar-links a.active {
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .navbar-theme-toggle {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /* My css */
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  .initials {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s ease;
+  }
+  /* .job-role {
+    color: #fff;
+    font-size: 16px;
+  } */

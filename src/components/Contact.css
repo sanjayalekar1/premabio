@@ -1,0 +1,31 @@
+.contact-section .heading {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 44px;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    color: #6c63ff; /* Adjust the color to match your theme */
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #4a42d8; /* Darker hover effect */
+    transform: scale(1.2);
+  }
+  
